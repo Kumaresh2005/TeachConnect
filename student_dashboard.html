@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css" />
+    <script src="/static/student.js" defer></script>
+  </head>
+  <body class="dashboard student-theme">
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="sidebar-logo">TeachConnect</div>
+        <ul class="sidebar-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#notes">Notes</a></li>
+          <li><a href="#assignments">Assignments</a></li>
+          <li><a href="#marks">Marks</a></li>
+          <li><a href="#announcements">Announcements</a></li>
+          <li><a href="#doubts">Doubts</a></li>
+          <li><a href="#profile">Profile</a></li>
+        </ul>
+      </aside>
+      <div class="main-content">
+        <header class="main-header">
+          <h1>
+            Welcome, Kumar Biswas <span class="student-badge">Student</span>
+          </h1>
+          <p>Class: 12A | Email: kumar.biswas@student.com</p>
+        </header>
+        <main>
+          <section id="notes" class="card big-card">
+            <h2>Notes</h2>
+            <div class="notes-list">
+              <div class="note-card">
+                <h4>Maths - Algebra.pdf</h4>
+                <p>Uploaded: 25 Sep 2025</p>
+                <button>Download</button>
+              </div>
+              <div class="note-card">
+                <h4>Physics - Mechanics.pdf</h4>
+                <p>Uploaded: 24 Sep 2025</p>
+                <button>Download</button>
+              </div>
+              <div class="note-card">
+                <h4>Chemistry - Organic.pdf</h4>
+                <p>Uploaded: 23 Sep 2025</p>
+                <button>Download</button>
+              </div>
+            </div>
+          </section>
+          <section id="assignments" class="card big-card">
+            <h2>Assignments</h2>
+            <div class="assignment-list">
+              <div class="assignment-card">
+                <h4>Maths Assignment 1</h4>
+                <p>Status: <span style="color: green">Submitted</span></p>
+                <button disabled>Submitted</button>
+              </div>
+              <div class="assignment-card">
+                <h4>Physics Assignment 2</h4>
+                <p>Status: <span style="color: red">Pending</span></p>
+                <button>Submit</button>
+              </div>
+            </div>
+          </section>
+          <section id="marks" class="card big-card">
+            <h2>Marks</h2>
+            <table class="marks-table">
+              <tr>
+                <th>Subject</th>
+                <th>Marks</th>
+              </tr>
+              <tr>
+                <td>Maths</td>
+                <td>85/100</td>
+              </tr>
+              <tr>
+                <td>Physics</td>
+                <td>78/100</td>
+              </tr>
+              <tr>
+                <td>Chemistry</td>
+                <td>92/100</td>
+              </tr>
+            </table>
+          </section>
+          <section id="announcements" class="card big-card">
+            <h2>Announcements</h2>
+            <ul class="announcement-list">
+              <li><strong>25 Sep:</strong> School will be closed on Friday.</li>
+              <li><strong>24 Sep:</strong> Physics test on Monday.</li>
+            </ul>
+          </section>
+          <section id="doubts" class="card big-card">
+            <h2>Q&A Section</h2>
+            <div class="qa-list">
+              <div class="qa-item">
+                <strong>You:</strong> What is the formula for kinetic energy?
+                <br /><strong>Teacher:</strong> KE = 0.5 × m × v²
+              </div>
+              <div class="qa-item">
+                <strong>You:</strong> What is Newton's second law? <br /><strong
+                  >Teacher:</strong
+                >
+                F = m × a
+              </div>
+            </div>
+            <input type="text" placeholder="Ask a doubt..." />
+            <button>Send</button>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

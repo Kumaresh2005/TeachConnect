@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teacher Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css" />
+    <script src="/static/teacher.js" defer></script>
+  </head>
+  <body class="dashboard teacher-theme">
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="sidebar-logo">TeachConnect</div>
+        <ul class="sidebar-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#notes">Notes</a></li>
+          <li><a href="#assignments">Assignments</a></li>
+          <li><a href="#marks">Marks</a></li>
+          <li><a href="#announcements">Announcements</a></li>
+          <li><a href="#profile">Profile</a></li>
+        </ul>
+      </aside>
+      <div class="main-content">
+        <header class="main-header">
+          <h1>
+            Welcome, Mrs. sandip <span class="teacher-badge">Teacher</span>
+          </h1>
+          <p>Subject: Physics | Email: sandip@teacher.com</p>
+        </header>
+        <main>
+          <section id="notes" class="card big-card">
+            <h2>Upload Notes</h2>
+            <div class="notes-list">
+              <div class="note-card">
+                <h4>Maths - Algebra.pdf</h4>
+                <p>Uploaded: 25 Sep 2025</p>
+                <button>Delete</button>
+              </div>
+              <div class="note-card">
+                <h4>Physics - Mechanics.pdf</h4>
+                <p>Uploaded: 24 Sep 2025</p>
+                <button>Delete</button>
+              </div>
+            </div>
+            <input type="file" /> <button>Upload</button>
+          </section>
+          <section id="assignments" class="card big-card">
+            <h2>Post Assignments</h2>
+            <div class="assignment-list">
+              <div class="assignment-card">
+                <h4>Maths Assignment 1</h4>
+                <button>Edit</button>
+              </div>
+              <div class="assignment-card">
+                <h4>Physics Assignment 2</h4>
+                <button>Edit</button>
+              </div>
+            </div>
+            <input type="text" placeholder="New assignment..." />
+            <button>Post</button>
+          </section>
+          <section id="marks" class="card big-card">
+            <h2>Post Marks</h2>
+            <table class="marks-table">
+              <tr>
+                <th>Student</th>
+                <th>Subject</th>
+                <th>Marks</th>
+                <th>Action</th>
+              </tr>
+              <tr>
+                <td>John Doe</td>
+                <td>Maths</td>
+                <td><input type="number" value="85" /></td>
+                <td><button>Update</button></td>
+              </tr>
+              <tr>
+                <td>Jane Smith</td>
+                <td>Physics</td>
+                <td><input type="number" value="78" /></td>
+                <td><button>Update</button></td>
+              </tr>
+            </table>
+          </section>
+          <section id="announcements" class="card big-card">
+            <h2>Make Announcements</h2>
+            <ul class="announcement-list">
+              <li>
+                <strong>25 Sep:</strong> School will be closed on Friday.
+                <button>Edit</button>
+              </li>
+              <li>
+                <strong>24 Sep:</strong> Physics test on Monday.
+                <button>Edit</button>
+              </li>
+            </ul>
+            <input type="text" placeholder="New announcement..." />
+            <button>Post</button>
+          </section>
+          <section id="profile" class="card big-card">
+            <h2>Profile</h2>
+            <p>Name: Mrs. Smith</p>
+            <p>Subject: Physics</p>
+            <p>Email: smith@teacher.com</p>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
